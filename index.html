@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            font-family: 'Source Code Pro', monospace;
+
+        }
+        body{
+            width:100%;
+            height:100%;
+        }
+        #head{
+            width:100%;
+            height:100px;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items:center;
+            text-align: center;
+            background-color: lightgreen;
+            color:white;
+        }
+        #titl{
+            margin-left:20px;
+
+        }
+        #menu{
+            width:100%;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items:center;
+            text-align: center;
+        }
+        #link{
+            display: none;
+        }
+        .a1{
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            height:50px;
+            background-color: black;
+            justify-content: space-around;
+            align-items:center;
+            
+        }
+        #hamb{
+            width:50px;
+            height:50px;
+            margin-right:20px;
+        }
+        #hamb>img{
+            width:100%;
+            height:100%;
+        }
+        #arty1{
+            margin-top:50px;
+            width:100%;
+            height:800px;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            text-align: center;
+        }
+        #IMG{
+            width:900px;
+            height:500px;
+        }
+        #para{
+            margin-top: 25px;
+            width:800px;
+        }
+      
+     
+
+       @media screen and (max-width:1400px){
+        #IMG{
+            width: 900px;
+            height: 500px;
+            transition:1s;
+        }
+        #para{
+            width:875px;
+            font-size: 15px;
+            transition:1s;
+        }
+       }
+
+       
+       @media screen and (max-width:1200px){
+        #IMG{
+            width: 750px;
+            height: 450px;
+            transition:1s;
+        }
+        #para{
+            width:725px;
+            font-size: 15px;
+            transition:1s;
+        }
+       }
+
+
+       @media screen and (max-width:950px){
+        #IMG{
+            width: 600px;
+            height: 400px;
+            background-color: antiquewhite;
+            transition:1s;
+        }
+        #para{
+            width:575px;
+            font-size: 14px;
+            transition:1s;
+        }
+       }
+
+       @media screen and (max-width:750px){
+        #IMG{
+            width: 500px;
+            height: 350px;
+            background-color: antiquewhite;
+            transition:1s;
+        }
+        #para{
+            width:475px;
+            font-size: 13px;
+            transition:1s;
+        }
+       }
+
+       @media screen and (max-width:600px){
+        #IMG{
+            width: 350px;
+            height: 250px;
+            background-color: antiquewhite;
+            transition:1s;
+        }
+        #para{
+            width:325px;
+            font-size: 12px;
+            transition:1s;
+        }
+       }
+
+       @media screen and (max-width:450px){
+        #IMG{
+            width: 300px;
+            height: 200px;
+            background-color: antiquewhite;
+            transition:1s;
+        }
+        #para{
+            width:275px;
+            font-size: 11px;
+            transition:1s;
+        }
+       }
+
+       
+
+    </style>
+</head>
+<body>
+    <header id="head">
+        <nav id="menu">
+            <h1 id="titl">Publix Works</h1>
+           
+
+            <div id="hamb" onclick="WHATSUP()">
+                <img src="./menu.png">
+            </div>
+        </nav>
+        <br>
+        
+
+      
+    </header>
+
+    <div id="link">
+        <a class="a1">Contact</a>
+        <a class="a1">Products</a>
+        <a class="a1">About</a>
+        </div>
+
+    <article id="arty1">
+        <img id="IMG" src="./shutterstock-1629960394___03110559067.webp">
+
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut saepe nesciunt impedit quasi dolores inventore in id hic placeat maxime velit quos, cupiditate laudantium totam minima ipsa voluptates rem possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus saepe iure perferendis at fugiat? Repudiandae minima excepturi alias quidem voluptate, itaque omnis ipsa quo amet nostrum, reiciendis cupiditate magni. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae sint reprehenderit tenetur odit facilis dicta itaque nulla corporis fugit laboriosam deserunt voluptatibus architecto consequuntur, asperiores amet. A quae perferendis culpa?</p>
+    </article>
+    
+</body>
+<script>
+    
+
+    function WHATSUP(){
+       var s=  document.getElementById('link');
+       if (s.style.display === "flex") {
+    s.style.display = "none";
+  } else {
+    s.style.display = "flex";
+    }
+}
+
+</script>
+</html>
